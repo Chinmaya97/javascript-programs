@@ -1,0 +1,26 @@
+
+<script>
+    // how to find vouwels from strings
+   // var string = prompt('enter a string')
+    //var result = string.toLocaleLowerCase()
+     //if (result == 'a' || result == 'e' || result == 'i' || result == 'o' || result == 'u') {
+       // console.log(`${string} is vouwel`)
+     //} else {
+      //  console.log(`${string} is consonant`)
+
+     //}
+// how to count voules
+var string  = prompt("Enter a string")
+const voules  = ['a','e','i','o','u']
+const countVouwes = (str) => {
+    var count = 0
+    for ( let letters of str.toLowerCase()) {
+        if (voules.includes(letters)) {
+            count++;
+        }
+
+    }
+    return count
+}
+console.log(countVouwes(string))
+</script>

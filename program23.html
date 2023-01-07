@@ -1,0 +1,14 @@
+<script>
+    // first letter of string to be uppercase
+    var input = prompt("Enter a string")
+    const FistCapital = (str)=> {
+       var newstr =  str.split(" ")
+       var newarr = newstr.map((value)=>{
+        return value.charAt(0).toUpperCase() + value.slice(1)
+       })
+       return newarr.join(" ")
+
+    } 
+    console.log(FistCapital(input))
+
+</script>

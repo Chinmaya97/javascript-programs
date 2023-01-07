@@ -1,0 +1,34 @@
+// how to find misssing number from given integer of array of 1 to 10
+<script>
+    //let intArray = [1,2,3,5,20]
+    //let missArray = [];
+    //let missValue = (arr) => {
+        //let maxValue = Math.max(...arr)
+       // let minValue = Math.min(...arr)
+        //for (let i = minValue; i < maxValue; i++) {
+            //if (arr.indexOf(i) < 0) {
+                //missArray.push(i)
+           // }
+        //}
+        ///return missArray;
+   // }
+    //console.log(missValue(intArray))
+    let intArray = [1,2,3,5,25]
+    let missArray = [];
+    let missValue = (arr) => {
+        let maxValue = Math.max(...arr)
+        let minValue = Math.min(...arr)
+        for (let i = minValue; i < maxValue; i++) {
+            if (arr.indexOf(i) < 0) {
+                missArray.push(i)
+            }
+        }
+        return missArray
+
+    }
+    console.log(missValue(intArray))
+
+
+
+
+</script>

@@ -1,0 +1,18 @@
+<script>
+    // how to merge two array and sort them
+    //let arr1 = [5,4,3,2,1]
+    //let arr2 = [6,7,8,9,10]
+    //let arr3 = arr1.concat(arr2)
+    //var sorted = arr3.sort(function(a,b){
+       // return a-b
+    //})
+    //console.log(sorted)
+    let arr1 = [5,4,3,2,1]
+    let arr2 = [6,7,8,9,10]
+    let arr3 = [...arr1,...arr2]
+    var sorted = arr3.sort(function(a,b){
+        return a-b
+    })
+    console.log(sorted)
+    
+</script>

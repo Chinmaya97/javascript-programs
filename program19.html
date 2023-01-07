@@ -1,0 +1,10 @@
+<script>
+    // intersection of two arrays / sets
+    var arr1 = [2,4,6,8,10]
+    var arr2 = [2,5,6,8,11]
+    var interArray = arr1.filter((ele)=> {
+        return arr2.includes(ele)
+    })
+    console.log([...new Set(interArray)])
+
+</script>

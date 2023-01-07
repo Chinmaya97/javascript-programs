@@ -1,0 +1,23 @@
+
+// find second largest value and remove first largest value from given array
+<script>
+//const intArray = [2,5,8,9,25]
+    //const LargestValue = (arr) => {
+       // firstlarge = Math.max(...arr)
+        //index = arr.indexOf(firstlarge)
+        //arr.splice(index,1)
+        //secondlarge = Math.max(...arr)
+        //return secondlarge
+
+    //}
+    //console.log(LargestValue(intArray))
+    let arr1 = [1,2,3,4,5]
+    let largest = (arr) => {
+        let first = Math.max(...arr)
+        let index = arr.indexOf(first)
+        arr.splice(index,1)
+        let second = Math.max(...arr)
+        return second
+    }
+    console.log(largest(arr1))
+</script>
