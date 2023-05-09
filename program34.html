@@ -1,0 +1,46 @@
+<script>
+    /* let obj = {// reference copy
+name:"bunty"
+}
+let user = obj;
+user.name = "babu"
+
+console.log(obj) */
+// var x = "babu"// value copy
+// y = x
+// var y = "bunty"
+// console.log(x)
+// Shallow copy: 
+//means that only the first level of the object is copied. Deeper levels are referenced.
+//A shallow copy can be achieved using the spread operator (…) or using Object.assign:
+
+// Deep copy: means that all levels of the object are copied. This is a true copy of the object.
+//A deep copy can be achieved using JSON.parse + JSON.stringify:
+
+//shallow copy
+// let obj = {
+//     name: "bunty",
+//     address:{
+//     city:"bhadrak"
+//     }
+// }
+// let user = Object.assign({},obj)
+// user.address.city = "cuttack"
+// console.log(obj)
+// console.log(user)
+//deepcopy
+let obj = {
+    name: "bunty",
+    address:{
+    city:"bhadrak"
+    }
+}
+let user = JSON.parse(JSON.stringify(obj))
+user.address.city = "cuttack"
+console.log(obj)
+console.log(user)
+
+
+
+
+</script>

@@ -1,10 +1,18 @@
 <script>
-    // recverse a string
-    const revString = (str) => {
-        let strToarray = str.split("")
-        let strReverse = strToarray.reverse()
-        let toString = strReverse.join("")
-        return toString
-    }
-    console.log(revString("manasa"))
+    // // recverse a string
+    // const revString = (str) => {
+    //     let strToarray = str.split("")
+    //     let strReverse = strToarray.reverse()
+    //     let toString = strReverse.join("")
+    //     return toString
+    // }
+    // console.log(revString("manasa"))
+let str = "hello india"
+var r = ''
+for (var i = 0; i < str.length; i++) {
+    r = r  + str[str.length -i-1]
+}
+console.log(r)
+
+
 </script>

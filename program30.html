@@ -1,12 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-   
-</body>
-</html>
+////////polyfill.map//////
+<!-- <script>
+    Array.prototype.myMap = function(callback) {
+        const newArr = [];
+        for (let item of this){
+            newArr.push(callback(item))
+        }
+        return newArr;
+
+    }
+
+     const arr = [10,20,30,40]
+     const result = arr.myMap(x=> x *2)
+     console.log(result)
+</script> -->
+/////polyfill for filter /////
+Array.prototype.myFilter = function (callback) {
+    const newArr = []
+    {
+        
+        
+    }
+    return newArr;
+
+}
+
+const arrdata = [0,1,2,3,4,5,6,7,8,9]
+const result = arrdata.myFilter(function(item, index){
+    return item % 2 === 0;
+
+})
+console.log(result)

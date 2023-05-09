@@ -1,14 +1,23 @@
 <script>
-    // first letter of string to be uppercase
-    var input = prompt("Enter a string")
-    const FistCapital = (str)=> {
-       var newstr =  str.split(" ")
-       var newarr = newstr.map((value)=>{
-        return value.charAt(0).toUpperCase() + value.slice(1)
-       })
-       return newarr.join(" ")
+    // // first letter of string to be uppercase
+    // var input = prompt("Enter a string")
+    // const FistCapital = (str)=> {
+    //    var newstr =  str.split(" ")
+    //    var newarr = newstr.map((value)=>{
+    //     return value.charAt(0).toUpperCase() + value.slice(1)
+    //    })
+    //    return newarr.join(" ")
 
-    } 
-    console.log(FistCapital(input))
+    // } 
+    // console.log(FistCapital(input))
+    let atr = "aggdgyefefhffhfer"
+    let unique = ""
+    for (let i = 0; i<str.length; i++) {
+        if(!unique.includes(str[i])){
+            unique = unique + str[i]
+        }
+
+    }
+    console.log(unique)
 
 </script>

@@ -1,16 +1,27 @@
 <script>
     // pallindrome 
-    var string = prompt("enter a string")
-    string = string.toLowerCase()
-    var pallindrome = (str) => {
-        //reverse the string
-        var strReverse = str.split("").reverse().join("")
-        // check palindrome
-        if (strReverse === str) {
-            console.log("true")
-        } else {
-            console.log("false")
+    // var string = prompt("enter a string")
+    // string = string.toLowerCase()
+    // var pallindrome = (str) => {
+    //     //reverse the string
+    //     var strReverse = str.split("").reverse().join("")
+    //     // check palindrome
+    //     if (strReverse === str) {
+    //         console.log("true")
+    //     } else {
+    //         console.log("false")
+    //     }
+    // }
+    // console.log(pallindrome(string))
+
+var pallindrome = (str)=>{
+    for (var i = 0; i<str.length/2; i++) {
+        if (str[i] !== str[str.length -1-i]) {
+            return 'not apallindrome'
         }
     }
-    console.log(pallindrome(string))
+    return 'pallindrome'
+}
+console.log(pallindrome('hello'))
+
 </script>

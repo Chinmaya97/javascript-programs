@@ -1,0 +1,18 @@
+<script>
+//first class obj
+// let message = function(){
+//     console.log("hello world")
+// }
+// message()
+//higher order function
+function area(radius){
+    return 3.14 * radius * radius
+}
+let cal = function(ra,callback){
+    return callback(ra)
+}
+console.log(cal(5,area))
+
+
+
+</script>

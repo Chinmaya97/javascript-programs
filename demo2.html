@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+     function App()
+{
+    const [theme, setTheme] = useState({});
+
+    function handleThemeChange(e){
+        if(e.target.checked) {
+            setTheme({
+                backgroundColor: 'black',
+                color:'white',
+                width: '250px',
+                padding:'10px'
+            })
+        } else {
+            setTheme({
+                backgroundColor: 'white',
+                color:'black',
+                width: '250px',
+                padding:'10px'
+            })
+        }
+    }
+
+    return(
+        <div className="container-fluid">
+            <div style={theme}>
+            <h2>User Login</h2>
+            <div className="form-switch">
+                <input onChange={handleThemeChange} className="form-check-input" type="checkbox"/> Dark Theme
+            </div>
+            <dl>
+                <dt>User Name</dt>
+                <dd><input type="text" /></dd>
+                <dt>Password</dt>
+                <dd><input type="password"/></dd>
+            </dl>
+            <button>Login</button>
+            </div>
+        </div>
+    )
+}
+      
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />)
+    </script>
+
+  </body>
+</html>

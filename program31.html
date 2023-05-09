@@ -1,0 +1,21 @@
+<script>
+    //call by value,all primitive datatypes
+    function squre(x){
+x = x * x
+return x
+}
+let y = 10
+let result = squre(y)
+console.log(result)
+// callby reference obj array
+function animal(d){
+    d.size = 'large'
+}
+let dog = {
+    name: 'Dog',
+    color: 'black'
+};
+console.log(dog)
+animal(dog)
+console.log(dog)
+</script>
